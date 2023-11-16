@@ -12,7 +12,9 @@ Informações
   Partes desenvolvidas agora
 - Site de apresentação do jogo HTML/CSS/JS
 - Site de Home do jogo(mais ilustrativa do que funcional) HTML/CSS/JS
-- Jogo(ainda esta em desenvolvimento) React/React Router/Redux/CSS
+- Jogo(ainda esta em desenvolvimento)
+  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="30px" height="30px"></img>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" width="30px" height="30px"></img>
 
   Divisão de Historia
  Prologo | ACT 1 | ACT 2 | ACT 3 | PUTRIDY
