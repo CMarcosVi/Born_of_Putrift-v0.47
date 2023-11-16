@@ -1,8 +1,22 @@
-# React + Vite
+# Bron of Putrify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Informações
+  Tecnologias Utilizadas
+    - HTML
+    - CSS
+    - Javascript
+    - React
+    - React Router
+    - Redux
 
-Currently, two official plugins are available:
+  Partes desenvolvidas agora
+- Site de apresentação do jogo HTML/CSS/JS
+- Site de Home do jogo(mais ilustrativa do que funcional) HTML/CSS/JS
+- Jogo(ainda esta em desenvolvimento) React/React Router/Redux/CSS
+
+  Divisão de Historia
+ Prologo | ACT 1 | ACT 2 | ACT 3 | PUTRIDY
+
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
