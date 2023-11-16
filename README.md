@@ -2,16 +2,22 @@
 
 Informações
   Tecnologias Utilizadas
-    - HTML
-    - CSS
-    - Javascript
-    - React
-    - React Router
-    - Redux
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg" width="30px" height="30px"></img>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg" width="30px" height="30px"></img>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" width="30px" height="30px"></img>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="30px" height="30px"></img>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" width="30px" height="30px"></img>
+
 
   Partes desenvolvidas agora
-- Site de apresentação do jogo HTML/CSS/JS
+- Site de apresentação do jogo
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg" width="30px" height="30px"></img>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg" width="30px" height="30px"></img>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" width="30px" height="30px"></img>
 - Site de Home do jogo(mais ilustrativa do que funcional) HTML/CSS/JS
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg" width="30px" height="30px"></img>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg" width="30px" height="30px"></img>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" width="30px" height="30px"></img>
 - Jogo(ainda esta em desenvolvimento)
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="30px" height="30px"></img>
   <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" width="30px" height="30px"></img>
