@@ -16,6 +16,9 @@ const LifePersonagem = () => {
     // Se houver um valor salvo, atualiza o estado do Redux com esse valor
     if (savedLife !== null) {
       dispatch(setLife(parseInt(savedLife, 10)));
+    } else {
+      // Se não houver valor salvo, define a vida inicial como 50
+      dispatch(setLife(50));
     }
   }, [dispatch]);
 
@@ -27,7 +30,7 @@ const LifePersonagem = () => {
   const calculateBarWidth = () => {
     const minWidth = 0;
     const maxWidth = 100;
-    const width = Math.min(Math.max((life / 100) * 50, minWidth), maxWidth) + '%';
+    const width = Math.min(Math.max((life / 100) * 100, minWidth), maxWidth) + '%';
     return width;
   };
 

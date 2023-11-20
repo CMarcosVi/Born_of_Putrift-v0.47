@@ -14,6 +14,7 @@ const Inventario = () => {
 
   const toggleInventario = () => {
     setAbrirInventario(!abrirInventario);
+    console.log('Itens no inventário:', inventarioItens);
   };
 
   const fecharInventario = () => {
@@ -49,17 +50,19 @@ const Inventario = () => {
                 onMouseEnter={(e) => mostrarTooltip(e, item.textoTooltip)}
                 onMouseLeave={esconderTooltip}
               >
-                <img
-                  className="itemInventario"
-                  src={item.url}
-                  alt=""
-                />
+                {item.url && (
+                  <img
+                    className="itemInventario"
+                    src={item.url}
+                    alt=""
+                  />
+                )}
                 {tooltipVisivel && (
                   <div
                     className="tooltipPersonalizado"
                     style={{ left: posicaoMouse.x, top: posicaoMouse.y }}
                   >
-                    <p>{item.textoTooltip}</p>
+                    {item.textoTooltip && <p>{item.textoTooltip}</p>}
                     <button className="botaoRemover" onClick={() => removerItemAoInventario(item)}>Remover</button>
                   </div>
                 )}

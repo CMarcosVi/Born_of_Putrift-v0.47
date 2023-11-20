@@ -33,6 +33,7 @@ const inventorySlice = createSlice({
   reducers: {
     addItem: (state, action) => {
       const newItem = action.payload;
+      console.log('Adicionando item:', newItem);
       // Verificar se o item já está no inventário
       if (!state.items.some(item => item.id === newItem.id)) {
         state.items.push(newItem);
