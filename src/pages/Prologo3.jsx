@@ -23,17 +23,17 @@ const Prologo3 = () => {
     {
       texto: "Olhar gaveta de talheres",
       resposta: "Você olha a gaveta e encontra uma faca",
-      inventario: [{ id: 3, nome: "Faca", textoTooltip: "Faca de cozinha", url: "src/pages/imgs/Faca.png" }],
+      inventario: [{ id: 2, nome: "Faca", textoTooltip: "Faca de cozinha", url: "src/pages/imgs/Faca.png" }],
     },
     {
       texto: "Olhar no armário",
       resposta: "Você olha e acha uma barra de cereal",
-      inventario: [{ id: 4, nome: "Barra de Cereal", textoTooltip: "Barra de cereal", url: "src/pages/imgs/BarradeCereal.png" }],
+      inventario: [{ id: 3, nome: "Barra de Cereal", textoTooltip: "Barra de cereal", url: "src/pages/imgs/BarradeCereal.png" }],
     },
     {
       texto: "Olhar caixa de remédios",
       resposta: "Aí está você",
-      inventario: [{ id: 5, nome: "Aspirina", textoTooltip: "Remédio para dores", url: "src/pages/imgs/Aspirina.png" }],
+      inventario: [{ id: 4, nome: "Aspirina", textoTooltip: "Remédio para dores", url: "src/pages/imgs/Aspirina.png" }],
       proximaRota: "/PrologoFinal",
     },
   ];
@@ -85,7 +85,7 @@ const Prologo3 = () => {
           ))}
           {mostrarBotao && opcoes[opcoes.length - 1].proximaRota && (
             <Link className="proximaRota" to={opcoes[opcoes.length - 1].proximaRota}>
-              <button className="rota">Seguir &rarr;</button>
+              <button className="rota">Carro &rarr;</button>
             </Link>
           )}
         </div>

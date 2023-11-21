@@ -1,4 +1,4 @@
-// store/inventorySlice.jsx
+// store/inventarioSlice.jsx
 import { createSlice } from '@reduxjs/toolkit';
 
 // Funções auxiliares para leitura e gravação no localStorage
@@ -27,6 +27,13 @@ const initialState = loadState() || {
   items: [],
 };
 
+const hasChaveCarro = (state) => {
+  console.log('Inventário:', state.items);
+  const temChaveCarro = state.items.some(item => item.id === 1);
+  console.log('Tem Chave do Carro:', temChaveCarro);
+  return temChaveCarro;
+};
+
 const inventorySlice = createSlice({
   name: 'inventory',
   initialState,
@@ -49,4 +56,5 @@ const inventorySlice = createSlice({
 });
 
 export const { addItem, removeItem } = inventorySlice.actions;
+export { hasChaveCarro }; // Correção: Exportar diretamente daqui
 export default inventorySlice.reducer;

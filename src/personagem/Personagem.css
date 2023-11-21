@@ -36,11 +36,15 @@
 
 
 .iconeInventario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 35px;
     width: 35px;
     border-radius: .5rem;
     background-color: #000;
     border:1px solid #f00; 
+    background-image: url(/src/pages/imgs/Inventario.png);
 }
 
 .barraInventario{
@@ -85,22 +89,35 @@
     border: solid #f00 1px;
     border-radius: .25rem;
     height: 40px;
+    width: 40px;
     margin-left: 1rem;
+    transition: .25s;
+}
+.itemInventario:hover{
+    border: solid #fff 1px;
+    transition: .25s;
 }
 .listaItems{
     display: flex;
+    flex-direction: column;
     list-style: none;
+}
+.listadeItems{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ajuste conforme necessário */
+    gap: 20px; 
+    
 }
 
 .tooltipPersonalizado{
+    position: absolute;
     text-align: center;
     font-family: 'Astloch', cursive;
     background-color: #010101;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    width: 200px;
+    width: 150px;
     border: 1px solid #f00;
     border-radius: 1rem 0rem;
 }
@@ -118,4 +135,7 @@
 .botaoRemover:hover{
     color: #f00;
     transition: 1s;
+}
+.iconInventario{
+    height: 30px;
 }

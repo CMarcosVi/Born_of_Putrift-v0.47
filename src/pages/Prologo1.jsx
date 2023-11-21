@@ -59,7 +59,7 @@ const Prologo1 = () => {
           ))}
           {!opcoes.some(opcao => opcao.visivel) && (
             <Link className="proximaRota" to="/Prologo2">
-              <button className="rota">Seguir &rarr;</button>
+              <button className="rota">Sala &rarr;</button>
             </Link>
           )}
         </div>

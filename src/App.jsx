@@ -6,6 +6,7 @@ import Prologo from './pages/Prologo';
 import Prologo1 from './pages/Prologo1';
 import Prologo2 from './pages/Prologo2';
 import Prologo3 from './pages/Prologo3';
+import PrologoFinal from './pages/Prologo4Final';
 
 function App() {
   const counter = useSelector((state) => state.counter);
@@ -18,6 +19,7 @@ function App() {
         <Route path="/prologo1" element={<Prologo1 />} />
         <Route path='/prologo2' element={<Prologo2 />}/>
         <Route path='/prologo3' element={<Prologo3 />}/>
+        <Route path='/prologoFinal' element={<PrologoFinal />}/>
       </Routes>
     </div>
   );

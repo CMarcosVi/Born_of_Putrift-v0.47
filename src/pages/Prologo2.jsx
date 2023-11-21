@@ -19,7 +19,7 @@ export default function Prologo2() {
     {
       texto: "Olhar na mesa da sala de estar",
       resposta: "Você olha a mesa e encontra a chave do seu carro",
-      inventario: [{ id: 2 ,nome: "Chaves do carro", textoTooltip: "Chaves do seu carro", url: "src/pages/imgs/chaves.png" }],
+      inventario: [{ id: 1 ,nome: "Chaves do carro", textoTooltip: "Chaves do seu carro", url: "src/pages/imgs/chaves.png" }],
     },
     {
       texto: "Procurar Aspirina na prateleira",
@@ -74,7 +74,7 @@ export default function Prologo2() {
           ))}
           {mostrarBotao && opcoes[opcoes.length - 1].proximaRota && (
             <Link className="proximaRota" to={opcoes[opcoes.length - 1].proximaRota}>
-              <button className="rota">Seguir &rarr;</button>
+              <button className="rota">Cozinha &rarr;</button>
             </Link>
           )}
         </div>

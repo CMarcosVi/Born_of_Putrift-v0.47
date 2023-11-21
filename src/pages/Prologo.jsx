@@ -19,7 +19,7 @@ export default function Prologo() {
   const opcoes = [
     {
       texto: "Olha na Mesa",
-      inventario: [{ id: 1 ,nome: "Imagens", textoTooltip: "atras da carta esta escrito: Eles estão chegando,ele esta chegando,7 viram 7 iram,a lua camersim esta surgindo e o sacrifico sera feito", url:"src/pages/imgs/fotografia.png"}],
+      inventario: [{ id: 0 ,nome: "Imagens", textoTooltip: "atras da carta esta escrito: Eles estão chegando,ele esta chegando,7 viram 7 iram,a lua camersim esta surgindo e o sacrifico sera feito", url:"src/pages/imgs/fotografia.png"}],
       resposta: "Imagens do seu irmão desaparecido, mapas e anotações.",
     },
     {
@@ -81,7 +81,7 @@ export default function Prologo() {
           ))}
           {mostrarBotao && opcoes[opcoes.length - 1].proximaRota && (
             <Link className="proximaRota" to={opcoes[opcoes.length - 1].proximaRota}>
-              <Link className="rota" to="/Prologo1">Seguir &rarr;</Link>
+              <Link className="rota" to="/Prologo1">Escadas &rarr;</Link>
             </Link>
           )}
         </div>
