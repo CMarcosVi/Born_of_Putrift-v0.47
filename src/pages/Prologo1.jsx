@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { decrement, increment } from '../store/counterSlice';
+import { decrement } from '../store/counterSlice';
 import Personagem from '../personagem/personagem';
 
 const Prologo1 = () => {
@@ -29,12 +29,10 @@ const Prologo1 = () => {
     const escolhaAtual = opcoes[index];
     setResposta(escolhaAtual.resposta);
 
-    // Reduz a vida em 10 pontos apenas se a escolha for "Não"
     if (escolhaAtual.texto === "Não") {
       dispatch(decrement(10));
     }
 
-    // Oculta todas as opções após a escolha
     const novasOpcoes = opcoes.map(opcao => ({ ...opcao, visivel: false }));
     setOpcoes(novasOpcoes);
   };

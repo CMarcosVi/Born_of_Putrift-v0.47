@@ -8,21 +8,16 @@ const LifePersonagem = () => {
   const dispatch = useDispatch();
   const life = useSelector((state) => state.counter.life);
 
-  // Efeito para carregar o valor da vida ao montar o componente
   useEffect(() => {
-    // Tenta obter o valor salvo no localStorage
     const savedLife = localStorage.getItem('life');
 
-    // Se houver um valor salvo, atualiza o estado do Redux com esse valor
     if (savedLife !== null) {
       dispatch(setLife(parseInt(savedLife, 10)));
     } else {
-      // Se não houver valor salvo, define a vida inicial como 50
       dispatch(setLife(50));
     }
   }, [dispatch]);
 
-  // Efeito para salvar o valor da vida no localStorage sempre que ele mudar
   useEffect(() => {
     localStorage.setItem('life', life.toString());
   }, [life]);

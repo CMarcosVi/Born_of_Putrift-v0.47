@@ -1,4 +1,3 @@
-// store/counterSlice.jsx
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -10,15 +9,12 @@ const counterSlice = createSlice({
   initialState,
   reducers: {
     setLife: (state, action) => {
-      // Garante que o valor da vida permaneça entre 0 e 100
       state.life = Math.min(100, Math.max(0, action.payload));
     },
     increment: (state, action) => {
-      // Garante que o valor da vida permaneça entre 0 e 100
       state.life = Math.min(100, state.life + action.payload)
     },
     decrement: (state, action) => {
-      // Garante que o valor da vida permaneça entre 0 e 100
       state.life = Math.max(0, state.life - action.payload);
     },
   },

@@ -1,7 +1,5 @@
-// store/inventarioSlice.jsx
 import { createSlice } from '@reduxjs/toolkit';
 
-// Funções auxiliares para leitura e gravação no localStorage
 const loadState = () => {
   try {
     const serializedState = localStorage.getItem('inventoryState');
@@ -19,7 +17,6 @@ const saveState = (state) => {
     const serializedState = JSON.stringify(state);
     localStorage.setItem('inventoryState', serializedState);
   } catch (err) {
-    // Lidar com erros, se necessário
   }
 };
 
@@ -41,7 +38,6 @@ const inventorySlice = createSlice({
     addItem: (state, action) => {
       const newItem = action.payload;
       console.log('Adicionando item:', newItem);
-      // Verificar se o item já está no inventário
       if (!state.items.some(item => item.id === newItem.id)) {
         state.items.push(newItem);
         saveState(state);
@@ -56,5 +52,5 @@ const inventorySlice = createSlice({
 });
 
 export const { addItem, removeItem } = inventorySlice.actions;
-export { hasChaveCarro }; // Correção: Exportar diretamente daqui
+export { hasChaveCarro };
 export default inventorySlice.reducer;
