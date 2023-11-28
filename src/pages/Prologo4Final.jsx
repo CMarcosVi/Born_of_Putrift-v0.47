@@ -28,7 +28,7 @@ const PrologoFinal = () => {
       resposta: chaveCarroPresente
         ? "Você liga o carro e sai para em busca de respostas"
         : "Você está sem a chave do carro",
-      proximaRota: "/Concluir",
+      proximaRota: "/prologoAgradecimento",
     },
   ];
 

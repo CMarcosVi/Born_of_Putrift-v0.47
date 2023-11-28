@@ -33,7 +33,7 @@ const Prologo3 = () => {
     {
       texto: "Olhar caixa de remédios",
       resposta: "Aí está você",
-      inventario: [{ id: 4, nome: "Aspirina", textoTooltip: "Remédio para dores", url: "src/pages/imgs/Aspirina.png" }],
+      inventario: [{ id: 4, nome: "Aspirina", textoTooltip: "Remédio para dores", url: "src/pages/imgs/Aspirina.png",usavel: true }],
       proximaRota: "/PrologoFinal",
     },
   ];

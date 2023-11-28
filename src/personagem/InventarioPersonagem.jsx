@@ -1,7 +1,10 @@
+// Inventario.js
+
 import React, { useState } from "react";
 import { useSelector } from 'react-redux';
 import { useDispatch } from "react-redux";
 import { removeItem } from "../store/inventarioSlice";
+import { increment } from "../store/counterSlice";
 
 const Inventario = () => {
   const dispatch = useDispatch();
@@ -29,6 +32,13 @@ const Inventario = () => {
   };
 
   const removerItemAoInventario = (item) => {
+    dispatch(removeItem(item));
+  };
+
+  const usarItem = (item) => {
+    if (item.id === 4) {
+      dispatch(increment(10));
+    }
     dispatch(removeItem(item));
   };
 
@@ -60,7 +70,9 @@ const Inventario = () => {
                     {tooltipItem === item && (
                       <div className="tooltipPersonalizado">
                         {item.textoTooltip && <p>{item.textoTooltip}</p>}
-                        <button className="botaoRemover" onClick={() => removerItemAoInventario(item)}>Remover</button>
+                        <button className="botaoRemover" onClick={() => item.usavel ? usarItem(item) : removerItemAoInventario(item)}>
+                          {item.usavel ? 'Usar' : 'Remover'}
+                        </button>
                       </div>
                     )}
                   </div>
