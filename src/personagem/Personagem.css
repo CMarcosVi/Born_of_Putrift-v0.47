@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Special+Elite&display=swap');
+
+
+.personagem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.life-bar-container {
+    width: 200px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 1rem 0rem;
+    margin: 20px;
+  }
+  
+  .life-bar {
+    height: 100%;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    border-radius: 1rem 0rem;
+  }
+.barra-de-vida{
+    display: flex;
+    justify-content: start;
+    padding: 2.5rem 0rem;
+}
+
+
+.inventario{
+    display: flex;
+    color: red;
+}
+
+
+.iconeInventario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: .5rem;
+    background-color: #000;
+    border:1px solid #f00; 
+    background-image: url(/src/pages/imgs/Inventario.png);
+}
+
+.barraInventario{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    border: 1px solid #f00;
+    border-radius: 1rem 0rem;
+    background-color: #000;
+}
+.fecharInventario{
+    margin: .5rem;
+    color: #f00;
+    border: 1px solid #f00;
+    background-color: #000;
+    border-radius: .5rem 0rem;
+    transition: 1s;
+}
+
+.fecharInventario:hover{
+    color: #000;
+    border: 1px solid #000;
+    background-color: #f00;
+    transition: 1s;
+}
+
+.AbaInventario{
+    font-family: 'Astloch', cursive;
+    color: #fff;
+    margin: .25rem auto;
+    font-size: 1.25rem;
+}
+
+.caixaInventario{
+    display: flex;
+    justify-content: start;
+}
+.itemInventario{
+    border: solid #f00 1px;
+    border-radius: .25rem;
+    height: 40px;
+    width: 40px;
+    margin-left: 1rem;
+    transition: .25s;
+}
+.itemInventario:hover{
+    border: solid #fff 1px;
+    transition: .25s;
+}
+.listaItems{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.listadeItems{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ajuste conforme necessário */
+    gap: 20px; 
+    
+}
+
+.tooltipPersonalizado{
+    position: absolute;
+    text-align: center;
+    font-family: 'Astloch', cursive;
+    background-color: #010101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    border: 1px solid #f00;
+    border-radius: 1rem 0rem;
+}
+
+.botaoRemover{
+    text-align: center;
+    font-family: 'Astloch', cursive;
+    color: #fff;
+    border: 1px solid #f00;
+    background-color: #010101;
+    border-radius: 1rem 0rem;
+    transition: 1s;
+    width: 75px;
+}
+.botaoRemover:hover{
+    color: #f00;
+    transition: 1s;
+}
+.iconInventario{
+    height: 30px;
+}

@@ -38,7 +38,7 @@ O jogo em questão esta em processo de desenvolvimento e atualmente de encontra 
 
 0.45v Beta
 <br/>
-PROLOGO Desenvolvido(Sujeito a atualizações)
+PROLOGO sendo desenvolvido
 <br/>
 ACT 1 X
 <br/>
