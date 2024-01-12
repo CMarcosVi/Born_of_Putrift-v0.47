@@ -7,7 +7,8 @@ import Personagem from '../personagem/personagem';
 const PrologoFinal = () => {
   const dispatch = useDispatch();
   const chaveCarroPresente = useSelector((state) => state.inventory.items.some(item => item.id === 1));
-
+  const hasChaveCarro = chaveCarroPresente;
+  
   const adicionarItemAoInventario = (item) => {
     dispatch(addItem(item));
   };
@@ -77,7 +78,7 @@ const PrologoFinal = () => {
               {opcao.texto}
             </button>
           ))}
-          {mostrarBotao && opcoes[opcoes.length - 1].proximaRota && (
+          {mostrarBotao && opcoes[opcoes.length - 1].proximaRota && hasChaveCarro && resposta !== "Você está sem a chave do carro" && (
             <Link className="proximaRota" to={opcoes[opcoes.length - 1].proximaRota}>
               <button className="rota">Concluir &rarr;</button>
             </Link>
