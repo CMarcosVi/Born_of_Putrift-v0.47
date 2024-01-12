@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector, hasChaveCarro } from 'react-redux';
 import { addItem } from '../store/inventarioSlice';
 import Personagem from '../personagem/personagem';
 
