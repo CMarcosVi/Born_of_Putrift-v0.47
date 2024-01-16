@@ -7,6 +7,7 @@
 <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="30px" height="30px"></img>
 <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" width="30px" height="30px"></img>
 <img src="https://github.com/devicons/devicon/blob/master/icons/canva/canva-original.svg" width="30px" height="30px"></img>
+<img src="https://vitest.dev/logo-shadow.svg" width="30px" height="30px"></img>
 
 # Site institucional explicando sobre o game
 https://cmarcosvi.github.io/Project-B/
@@ -31,7 +32,7 @@ Centralização geral do estado
 <img src="https://github.com/devicons/devicon/blob/master/icons/canva/canva-original.svg" width="30px" height="30px"></img>
 Criação de logos e items
 <br/>
-<img src="https://vitest.dev/logo-shadow.svg" width="30px" height="30px"></img>
+<img src="https://vitest.dev/logo-shadow.svg" width="20px" height="20px"></img>
 Testes Unitarios
 
 
