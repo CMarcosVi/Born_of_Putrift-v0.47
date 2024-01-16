@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector, hasChaveCarro } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../store/inventarioSlice';
 import Personagem from '../personagem/personagem';
 
@@ -8,7 +8,7 @@ const PrologoFinal = () => {
   const dispatch = useDispatch();
   const chaveCarroPresente = useSelector((state) => state.inventory.items.some(item => item.id === 1));
   const hasChaveCarro = chaveCarroPresente;
-  
+
   const adicionarItemAoInventario = (item) => {
     dispatch(addItem(item));
   };
