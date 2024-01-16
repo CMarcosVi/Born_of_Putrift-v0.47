@@ -20,16 +20,16 @@ https://cmarcosvi.github.io/Project-B/
 
 # Born of Putridy
 ### Tecnologias
-<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="30px" height="30px"></img> 
+<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="20px" height="20px"></img> 
 utilização para base de criação do projeto
 <br/>
-<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg" width="30px" height="30px"></img>
+<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg" width="20px" height="20px"></img>
 Personalização visual do projeto
 <br/>
-<img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" width="30px" height="30px"></img>
+<img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" width="20px" height="20px"></img>
 Centralização geral do estado 
 <br/>
-<img src="https://github.com/devicons/devicon/blob/master/icons/canva/canva-original.svg" width="30px" height="30px"></img>
+<img src="https://github.com/devicons/devicon/blob/master/icons/canva/canva-original.svg" width="20px" height="20px"></img>
 Criação de logos e items
 <br/>
 <img src="https://vitest.dev/logo-shadow.svg" width="20px" height="20px"></img>
