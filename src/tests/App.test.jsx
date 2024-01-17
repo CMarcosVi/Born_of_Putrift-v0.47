@@ -12,6 +12,10 @@ import Prologo2 from "../pages/Prologo2";
 import Prologo3 from "../pages/Prologo3";
 import Prologo4 from "../pages/Prologo4Final"
 import PrologoAgradecimento from "../pages/PrologoAgradecimento";
+import "./Apresentacao.test"
+import "./Prologo.test"
+
+
 
 describe("App", () => {
   test("must be able to render the main component on the screen", () => {
@@ -54,7 +58,7 @@ describe("App", () => {
       <Provider store={store}> 
         <MemoryRouter initialEntries={['/prologo1']}>
           <Routes>
-            <Route path="/prologo" element={<Prologo1 />} />
+            <Route path="/prologo1" element={<Prologo1 />} />
           </Routes>
         </MemoryRouter>
       </Provider>
@@ -67,7 +71,7 @@ describe("App", () => {
       <Provider store={store}> 
         <MemoryRouter initialEntries={['/prologo2']}>
           <Routes>
-            <Route path="/prologo" element={<Prologo2 />} />
+            <Route path="/prologo2" element={<Prologo2 />} />
           </Routes>
         </MemoryRouter>
       </Provider>
@@ -80,7 +84,7 @@ describe("App", () => {
       <Provider store={store}> 
         <MemoryRouter initialEntries={['/prologo3']}>
           <Routes>
-            <Route path="/prologo" element={<Prologo3 />} />
+            <Route path="/prologo3" element={<Prologo3 />} />
           </Routes>
         </MemoryRouter>
       </Provider>
@@ -93,7 +97,7 @@ describe("App", () => {
       <Provider store={store}> 
         <MemoryRouter initialEntries={['/prologo4']}>
           <Routes>
-            <Route path="/prologo" element={<Prologo4 />} />
+            <Route path="/prologo4" element={<Prologo4 />} />
           </Routes>
         </MemoryRouter>
       </Provider>
@@ -106,7 +110,7 @@ describe("App", () => {
       <Provider store={store}> 
         <MemoryRouter initialEntries={['/prologoAgradecimento']}>
           <Routes>
-            <Route path="/prologo" element={<PrologoAgradecimento />} />
+            <Route path="/prologoAgradecimento" element={<PrologoAgradecimento />} />
           </Routes>
         </MemoryRouter>
       </Provider>

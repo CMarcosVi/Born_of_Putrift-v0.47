@@ -14,7 +14,6 @@ export default function Prologo() {
   const [exibirMolde, setExibirMolde] = useState(false);
   const [inventario, setInventario] = useState([]);
   const [mostrarBotao, setMostrarBotao] = useState(false);
-
   
   const opcoes = [
     {
